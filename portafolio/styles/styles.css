@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #22d4fd;
+    --secondary-color: #f6f6f6;
+    --background-color: #000;
+    --font-family: "Montserrat", serif;
+    --font-size-large: 36px;
+    --font-size-medium: 24px;
+    --padding-container: 15%;
+    --gap-small: 10px;
+    --gap-medium: 28px;
+    --gap-large: 30px;
+    --border-radius: 16px;
+    --border-width: 2px;
+    --padding-button: 22px;
+    --padding-header: 2% 0% 0% 15%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+
+h1, strong {
+    color: var(--primary-color);
+}
+
+header {
+    padding: var(--padding-header);
+}
+
+.header__menu {
+    display: flex;
+    gap: var(--gap-medium);
+}
+
+.enlance_nav {
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.container {
+    padding: 0 var(--padding-container);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 87vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.informacion {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: var(--gap-large);
+}
+
+h1 {
+    font-size: var(--font-size-large);
+}
+
+p {
+    font-size: var(--font-size-medium);
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-large);
+}
+
+.enlace_information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-small);
+    width: 280px;
+    text-align: center;
+    font-size: var(--font-size-medium);
+    padding: var(--padding-button);
+    color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    border: var(--border-width) solid var(--primary-color);
+}
+
+.enlace_information:hover {
+    background-color: #272727;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #000;
+    padding: 24px;
+}
